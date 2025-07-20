@@ -13,10 +13,22 @@ const Hero = () => {
           Discover our curated collection of premium watches, crafted for those
           who appreciate sophistication and precision
         </p>
-        <Link href={'/collection'}> <button className="py-4 mt-3 px-6 rounded-xl bg-neutral-900 text-white">Shop the Collection</button> </Link>
+        <div>
+          <Link href={"#product"}>
+            <button className=" cursor-pointer py-4 mt-3 px-6 rounded-xl bg-neutral-900 text-white">
+              Shop the Collection
+            </button>
+          </Link>
+        </div>
       </div>
       <div className=" p-1 rounded-xl w-[450px] ">
-        <Image src={'/images/hero-watch.jpg'} className="rounded-xl" alt="watch img" width={500} height={500}></Image>
+        <Image
+          src={"/images/hero-watch.jpg"}
+          className="rounded-xl"
+          alt="watch img"
+          width={500}
+          height={500}
+        ></Image>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Mono, Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${lato.className} antialiased`}>
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
