@@ -14,10 +14,6 @@ const productSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    link: {
-      type: String,
-      required: true,
-    },
     description: {
       type: String,
       required: true,
@@ -27,5 +23,5 @@ const productSchema = new mongoose.Schema(
 );
 
 const Product =
-  mongoose.models.Product || mongoose.model("product", productSchema);
+  mongoose.models.Product || mongoose.model("Product", productSchema);
 export default Product;
